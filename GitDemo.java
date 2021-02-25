@@ -24,7 +24,24 @@ public class GitDemo {
      * i.e. if num = 4,
      *  the function will return the value of (1 * 2 * 3 * 4)
      *****/
-    public double findFactorial(int num) {
+    public int findFactorial(int num) {
+        int newNumber = 1;
+        reverseNum=newNumber;
+
+        for(int i = 1; i <= num; ++i){
+            newNumber = newNumber * i;
+        }
+
+        return newNumber;
+    }
+
+    /*****
+     * This function should reverse 'num' and return the resulting value.
+     * i.e. if num = 1234
+     *  the function will return 4321
+     *****/
+    public double reverseNumber(int num){
+
         double factorialNumber = 0;
 
         while( num != 0 ) {
@@ -34,22 +51,6 @@ public class GitDemo {
         }
 
         return factorialNumber;
-    }
-
-    /*****
-     * This function should reverse 'num' and return the resulting value.
-     * i.e. if num = 1234
-     *  the function will return 4321
-     *****/
-    public int reverseNumber(int num){
-        int newNumber = 1;
-        reverseNum=newNumber;
-
-        for(int i = 1; i <= num; ++i){
-            newNumber = newNumber * i;
-        }
-
-        return newNumber;
     }
 
 }
